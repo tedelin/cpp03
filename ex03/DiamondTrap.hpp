@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 17:48:18 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 19:20:54 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:36:18 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ class DiamondTrap: public FragTrap, public ScavTrap {
 	private:
 		std::string	getName() const;
 		std::string _name;
-		
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 17:48:16 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 19:20:22 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:43:42 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ DiamondTrap::DiamondTrap () : ClapTrap() {
 }
 
 DiamondTrap::DiamondTrap (std::string name) : ClapTrap((name + "_clap_name"), 100, 50, 30), _name(name) {
-    std::cout << "DiamondTrap constructor called" << std::endl;
+    std::cout << "DiamondTrap " << _name << " constructor called" << std::endl;
     return ;
 }
 
@@ -43,11 +43,11 @@ void	DiamondTrap::whoAmI() {
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& cpy) {
-    std::cout << "DiamondTrap copy constructor has been called" << std::endl;
+    std::cout << "DiamondTrap copy " << _name << " constructor has been called" << std::endl;
 	*this = cpy; 
 }
 
 DiamondTrap::~DiamondTrap () {
-	std::cout << "DiamondTrap destructor called" << std::endl;
+	std::cout << "DiamondTrap " << _name << " destructor called" << std::endl;
 	return ;
 }

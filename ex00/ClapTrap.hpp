@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 09:09:46 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 17:21:51 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:49:44 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,11 @@ class ClapTrap {
         void    takeDamage(unsigned int amount);
         void    beRepaired(unsigned int amount);
     
-
     private:
         std::string _name;
         unsigned int    _hitpoints;
         unsigned int    _energy;
         unsigned int    _attack_damage;
-
-
 };
 
 #endif

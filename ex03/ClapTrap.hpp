@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 09:09:46 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 18:18:40 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:50:16 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ class ClapTrap {
         unsigned int    _hitpoints;
         unsigned int    _energy;
         unsigned int    _attack_damage;
-
-
 };
 
 #endif

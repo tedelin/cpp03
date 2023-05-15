@@ -6,7 +6,7 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/13 15:18:18 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 17:30:20 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:45:13 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ScavTrap::ScavTrap () : ClapTrap() {
 }
 
 ScavTrap::ScavTrap (std::string name) : ClapTrap(name) {
-    std::cout << "ScavTrap constructor called" << std::endl;
+    std::cout << "ScavTrap " << _name << " constructor called" << std::endl;
     return ;
 }
 
@@ -30,7 +30,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& rhs) {
 }
 
 ScavTrap::ScavTrap(const ScavTrap& cpy) {
-    std::cout << "ScavTrap copy constructor has been called" << std::endl;
+    std::cout << "ScavTrap " << _name << " copy constructor has been called" << std::endl;
 	*this = cpy; 
 }
 
@@ -53,6 +53,6 @@ void	ScavTrap::guardGate( void ) {
 }
 
 ScavTrap::~ScavTrap () {
-	std::cout << "ScavTrap destructor called" << std::endl;
+	std::cout << "ScavTrap " << _name << " destructor called" << std::endl;
 	return ;
 }
