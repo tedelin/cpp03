@@ -6,25 +6,20 @@
 /*   By: tedelin <tedelin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 09:05:41 by tedelin           #+#    #+#             */
-/*   Updated: 2023/05/15 19:47:56 by tedelin          ###   ########.fr       */
+/*   Updated: 2023/05/15 19:59:27 by tedelin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <iostream>
 
-ClapTrap::ClapTrap () : _name(""), _hitpoints(10), _energy(10), _attack_damage (0) {
+ClapTrap::ClapTrap() : _name(""), _hitpoints(10), _energy(10), _attack_damage(0) {
     std::cout << "ClapTrap default constructor called" << std::endl;
     return ;
 }
 
-ClapTrap::ClapTrap (std::string name) : _name(name), _hitpoints(10), _energy(10), _attack_damage (0) {
+ClapTrap::ClapTrap(std::string name) : _name(name), _hitpoints(10), _energy(10), _attack_damage(0) {
     std::cout << "ClapTrap " << _name << " constructor called" << std::endl;
-    return ;
-}
-
-ClapTrap::ClapTrap (std::string name, unsigned int hitpoints, unsigned int energy, unsigned int attack) : _name(name), _hitpoints(hitpoints), _energy(energy), _attack_damage (attack) {
-    std::cout << "ClapTrap constructor called" << std::endl;
     return ;
 }
 
@@ -47,7 +42,7 @@ void    ClapTrap::attack(const std::string& target) {
     if (_hitpoints > 0 && _energy > 0)
     {
         _energy -= 1;
-        std::cout << "ClapTrap " << _name << " attacks " << target << ", causing" << _attack_damage << " points of damage!" << std::endl;
+        std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!" << std::endl;
     }
     else if (_hitpoints == 0)
         std::cout << "ClapTrap " << _name << " can't attack no hitpoints left" << std::endl;
